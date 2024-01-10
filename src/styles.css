@@ -1,8 +1,7 @@
 body {
-    margin: 0;
-    padding: 0;
     background-image: url('./img/mountain-velo.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     display: flex;
@@ -11,16 +10,23 @@ body {
     height: 100vh;
 }
 
+#web_title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5rem;
+
+}
+
 #formulaire-container {
-    background-color: rgba(0, 0, 0, 0.615);
-    padding: 20px;
-    border-radius: 10px;
     text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.615);
+    border-radius: 10px;
+    padding: 20px;
 }
 
 h1 {
@@ -65,11 +71,17 @@ button:hover {
     #formulaire-container {
         width: 80%;
     }
+    #web_title {
+        font-size: 30px;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #formulaire-container {
         width: 80%;
+    }
+    #web_title {
+        font-size: 30px;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -77,16 +89,25 @@ button:hover {
     #formulaire-container {
         width: 70%;
     }
+    #web_title {
+        font-size: 40px;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #formulaire-container {
         width: 60%;
     }
+    #web_title {
+        font-size: 50px;
+    }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     #formulaire-container {
         width: 50%;
+    }
+    #web_title {
+        font-size: 50px;
     }
 }
