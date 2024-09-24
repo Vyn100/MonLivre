@@ -1,113 +1,67 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 body {
-    background-image: url('./img/mountain-velo.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    height: 100%;
+    width: 100%;
+    /* padding: 20px; */
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    background-color: #d5d5d5;
+    /* Empêche le scroll horizontal et vertical */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+h1 {
+    font-size: 36px;
 }
 
-#web_title {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 5rem;
-
-}
-
-#formulaire-container {
-    text-align: center;
-}
-
-form {
+.container {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.615);
-    border-radius: 10px;
+    justify-content: space-between; /* Espace entre les éléments pour que le bouton soit en bas */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
     padding: 20px;
+    box-sizing: border-box; /* Pour s'assurer que le padding ne dépasse pas les dimensions */
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 24px;
-    border-bottom: dashed 2px rgba(0, 128, 0, 0.718);
+.images {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet aux images de se placer l'une en dessous de l'autre si l'écran est trop petit */
 }
 
-label {
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-input,
-select {
-    margin-bottom: 15px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+img {
+    max-width: 100%; /* Limite la taille des images pour qu'elles ne dépassent pas leur conteneur */
+    width: 45%; /* Chaque image prendra 45% de la largeur disponible */
+    height: 60%;
+    object-fit: fill; /* Permet de garder le ratio de l'image */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 button {
-    background-color: #4CAF50;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #007BFF;
     color: white;
-    padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
 }
 
 button:hover {
-    background-color: #45a049;
-}
-
-/* Media queries */
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    #formulaire-container {
-        width: 80%;
-    }
-    #web_title {
-        font-size: 30px;
-    }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    #formulaire-container {
-        width: 80%;
-    }
-    #web_title {
-        font-size: 30px;
-    }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    #formulaire-container {
-        width: 70%;
-    }
-    #web_title {
-        font-size: 40px;
-    }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    #formulaire-container {
-        width: 60%;
-    }
-    #web_title {
-        font-size: 50px;
-    }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    #formulaire-container {
-        width: 50%;
-    }
-    #web_title {
-        font-size: 50px;
-    }
+    background-color: #0056b3;
 }

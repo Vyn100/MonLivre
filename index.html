@@ -11,31 +11,15 @@
 </head>
 
 <body>
-
-  <div id="formulaire-container">
-    <p id="web_title">Le Sport Pour Vous !</p>
-    <form id="reservationForm">
-      <h1>Réservation</h1>
-
-      <label for="nom">Nom :</label>
-      <input type="text" id="nom" name="nom" required>
-
-      <label for="prenom">Prénom :</label>
-      <input type="text" id="prenom" name="prenom" required>
-
-      <label for="mail">E-mail :</label>
-      <input type="email" id="mail" name="mail" required>
-
-      <label for="tel">Numéro de téléphone :</label>
-      <input type="tel" id="tel" name="tel" required>
-
-      <label for="date">Date de réservation :</label>
-      <input type="date" id="date" name="date" required>
-
-      <button type="submit" id="submitBtn">Réserver</button>
-    </form>
+  <div class="container">
+    <h1>Découvrez mon livre</h1>
+    <div class="images">
+      <img src="./img/recto.jpg" alt="Photo du livre 1">
+      <img src="./img/verso.jpg" alt="Photo du livre 2">
+    </div>
+    <br>
+    <button onclick="sendEmail()">Je veux ce livre !</button>
   </div>
-
   <script src="./script.js"></script>
 </body>
 
